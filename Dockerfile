@@ -30,3 +30,11 @@ RUN wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -; \
         php7.2-zip \
         php7.2-xml; \
     rm -rf /var/lib/apt/lists/*
+
+# cairo     
+RUN apt-get update; \
+    apt-get install -y --no-install-recommends \
+        cairo \
+        libcairo2 \
+        libcairo2-dev; \
+    rm -rf /var/lib/apt/lists/*    
