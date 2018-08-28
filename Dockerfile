@@ -20,6 +20,7 @@ RUN wget -q https://packages.sury.org/php/apt.gpg -O- | apt-key add -; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
         zip \
+        php7.2-bcmath \
         php7.2-cli \
         php7.2-common \
         php7.2-curl \
